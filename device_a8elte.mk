@@ -3,11 +3,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/slte/slte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a8elte/a8elte-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/slte/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/a8elte/overlay
 
-LOCAL_PATH := device/samsung/slte
+LOCAL_PATH := device/samsung/a8elte
 
 ###########################################################
 ### RAMDISK
@@ -287,5 +287,5 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvi
 $(call inherit-product-if-exists, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_slte
-PRODUCT_DEVICE := slte
+PRODUCT_NAME := full_a8elte
+PRODUCT_DEVICE := a8elte
