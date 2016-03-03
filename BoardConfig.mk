@@ -57,7 +57,7 @@ TARGET_KERNEL_CONFIG := cm_exynos5430-a8elte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/a8elte
 # hardware/samsung_slsi/exynos/libhdmi_legacy
 TARGET_LINUX_KERNEL_VERSION := 3.10
-
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Use these flags if the board has a ext4 partition larger than 2gb
