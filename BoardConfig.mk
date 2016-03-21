@@ -1,9 +1,9 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/a8elte/BoardConfigVendor.mk
+-include vendor/samsung/slte/BoardConfigVendor.mk
 
-LOCAL_PATH := device/samsung/a8elte
+LOCAL_PATH := device/samsung/slte
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -17,12 +17,12 @@ TARGET_SOC := exynos5430
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a53
+TARGET_CPU_VARIANT := cortex-a15
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # RENDERSCRIPT
-BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
 #OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
 # Enable dex-preoptimization to speed up first boot sequence
@@ -43,21 +43,21 @@ BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 #BOARD_KERNEL_SEPARATED_DT := true
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/a8elte/dtb.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/slte/dtb.img
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00a00000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00c00000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3145728000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2401239040
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 28219277312
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-#TARGET_PREBUILT_KERNEL := device/samsung/a8elte/kernel
-TARGET_KERNEL_CONFIG := a8mea_03_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/a8elte
+#TARGET_PREBUILT_KERNEL := device/samsung/slte/kernel
+TARGET_KERNEL_CONFIG := cm_exynos5430-slte_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/slte
 # hardware/samsung_slsi/exynos/libhdmi_legacy
 TARGET_LINUX_KERNEL_VERSION := 3.10
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
+
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Use these flags if the board has a ext4 partition larger than 2gb
@@ -190,7 +190,7 @@ BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # SELINUX
 BOARD_SEPOLICY_DIRS := \
-	device/samsung/a8elte/sepolicy
+	device/samsung/slte/sepolicy
 
 ###########################################################
 ### CYANOGEN RECOVERY

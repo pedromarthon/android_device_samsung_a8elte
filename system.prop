@@ -1,19 +1,19 @@
 #
-# system.prop for a8elte
+# system.prop for slte
 #
-ro.product.model=SM-A800F
+ro.product.model=SM-G850F
 ro.product.brand=samsung
-ro.product.name=a8elte
-ro.product.device=a8elte
+ro.product.name=sltexx
+ro.product.device=slte
 
-ro.sf.lcd_density=480
+ro.sf.lcd_density=320
 
 #
 # RIL
 #
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0
-ro.telephony.ril_class=a8elteRIL
+ro.telephony.ril_class=SlteRIL
 
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
