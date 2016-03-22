@@ -243,3 +243,16 @@ app/mcRegistry/ffffffff00000000000000000000000e.tlbin
 app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 app/mcRegistry/ffffffff000000000000000000000012.tlbin
 app/mcRegistry/ffffffff00000000000000000000000f.tlbin
+
+#### Offline Charging 
+media/battery_low.spi
+media/battery_temperature_error.spi
+media/charge
+media/lcd_density.txt
+media/battery_error.spi
+media/dock_error.spi
+media/battery_temperature_limit.spi
+media/percentage.spi
+media/incompatible_charger.spi
+media/affordance.spi
+media/battery_cover.spi
