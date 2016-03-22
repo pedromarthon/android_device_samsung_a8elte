@@ -1,6 +1,7 @@
 ### Bluetooth
 vendor/firmware/bcm43455_V0056.0058.hcd
-
+etc/bluetooth/iop_bt.db
+etc/bluetooth/iop_device_list.conf
 ### Wifi
 etc/wifi/bcmdhd_apsta.bin
 etc/wifi/bcmdhd_ibss.bin
