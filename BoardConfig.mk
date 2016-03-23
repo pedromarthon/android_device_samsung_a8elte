@@ -17,12 +17,12 @@ TARGET_SOC := exynos5430
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_VARIANT := cortex-a15
+TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # RENDERSCRIPT
-BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53
 #OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
 # Enable dex-preoptimization to speed up first boot sequence
