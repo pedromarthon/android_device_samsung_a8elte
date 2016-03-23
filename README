@@ -37,7 +37,7 @@ Copyright (C) 2014-2015 Andreas Schneider <asn@cryptomilk.org>
 <manifest>
 <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
-<project name="Grace5921/hardware_samsung_slsi-cm" path="hardware/samsung/samsung_slsi-cm" remote="github" />
+<project name="Grace5921/hardware_samsung_slsi-cm" path="hardware/samsung/samsung_slsi-cm" remote="github"/>
 <project name="Grace5921/Kernel_samsung_a8elte" path="kernel/samsung/a8elte" remote="github" revision="cm-12.1"/>
 <project name="Grace5921/android_device_samsung_a8elte" path="device/samsung/a8elte" remote="github"/>
 <project name="Grace5921/external_stlport.git" path="external/stlport" remote="github" />
