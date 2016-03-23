@@ -31,7 +31,6 @@
 extern "C" {
 #endif
 
-#define ANDROID_SIM_COUNT_2
 
 #if defined(ANDROID_SIM_COUNT_2)
 #define SIM_COUNT 2
