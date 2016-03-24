@@ -22,7 +22,7 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # RENDERSCRIPT
-BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a15
 #OVERRIDE_RS_DRIVER := libRSDriverArm.so
 
 # Enable dex-preoptimization to speed up first boot sequence
