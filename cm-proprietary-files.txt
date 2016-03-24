@@ -37,9 +37,6 @@ vendor/firmware/seiren_fw_sram.bin
 vendor/firmware/fimc_is_fw2_3p3.bin
 vendor/firmware/setfile_3p3.bin
 vendor/firmware/setfile_5e3.bin
-etc/media_codecs_google_audio.xml
-etc/media_codecs_google_telephony.xml
-etc/media_codecs_google_video.xml
 
 # Noise supppression
 
