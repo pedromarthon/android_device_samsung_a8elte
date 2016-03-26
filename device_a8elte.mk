@@ -126,33 +126,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
 	$(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
-###########################################################
-### NFC
-###########################################################
 
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/nfc/libnfc-sec-hal.conf:system/etc/libnfc-sec-hal.conf \
-	$(LOCAL_PATH)/configs/nfc/libnfc-sec.conf:system/etc/libnfc-brcm.conf \
-	$(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
-
-PRODUCT_PACKAGES += \
-	com.android.nfc_extras \
-	libnfc_nci_jni \
-	libnfc-nci \
-	NfcNci \
-	Tag
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nfc.sec_hal=true
 
 ###########################################################
 ### AUDIO
 ###########################################################
-
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/audio/audio_effects.conf:system/etc/audio_effects.conf \
-	$(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
-	$(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
@@ -184,13 +162,6 @@ PRODUCT_PACKAGES += \
 	libOMX.Exynos.MP3.Decoder \
 	libOMX.Exynos.FLAC.Decoder
 
-PRODUCT_COPY_FILES += \
-        frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-        frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-        frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-	$(LOCAL_PATH)/configs/media/media_codecs.xml:system/etc/media_codecs.xml \
-	$(LOCAL_PATH)/configs/media/media_profiles.xml:system/etc/media_profiles.xml
-
 ###########################################################
 ### POWER
 ###########################################################
@@ -216,11 +187,6 @@ PRODUCT_PACKAGES += \
 ### GPS
 ###########################################################
 
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
-	$(LOCAL_PATH)/configs/gps/SuplRootCert:system/etc/SuplRootCert \
-	$(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml
-
 PRODUCT_PACKAGES += \
     libdmitry
 
@@ -238,7 +204,7 @@ PRODUCT_PACKAGES += \
 
 # This fixes switching between front/back camera sensors
 PRODUCT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1
+    camera2.portability.force_api=1
 
 ###########################################################
 ### TOUCHSCREEN
