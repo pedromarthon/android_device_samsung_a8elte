@@ -23,6 +23,32 @@ lib/omx/libOMX.Exynos.MPEG4.Decoder.so
 lib/omx/libOMX.Exynos.FLAC.Decoder.so
 lib/omx/libOMX.Exynos.AAC.Decoder.so
 lib/omx/libOMX.Exynos.VP8.Encoder.so
+lib/libsomxcore.so
+lib/libsomxsr263d.so
+lib/libsomx263dsw.so
+lib/libsomxflacd.so 
+lib/libsomxaacd.so
+lib/libsomxwmv8d.so
+lib/libsomxamrd.so 
+lib/libsomxaace.so
+lib/libsomxmp3d.so
+lib/libsomxnaace.so
+lib/libsomxwmad.so 
+lib/libsomxmp43d.so
+lib/libsomxadpcmd.so
+lib/libsomxwmv7d.so 
+lib/libsomxcmn.so
+lib/libsomx264dsw.so 
+lib/libsomxhevcdsw.so 
+lib/libsomxmp4vdsw.so
+lib/libsomxvc1dsw.so 
+lib/libsomxvencsw.so
+lib/libstagefright_omx.so 
+lib/libsomxflacd.so
+lib/libsomxvp8d.so
+lib/libsomxaace
+lib/libExynosOMX_Core.so
+lib/libExynosOMX_Resourcemanager.so
 
 ### Media
 # hevc for v4l2
