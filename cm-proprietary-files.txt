@@ -46,7 +46,7 @@ lib/libsomxvencsw.so
 lib/libstagefright_omx.so 
 lib/libsomxflacd.so
 lib/libsomxvp8d.so
-lib/libsomxaace
+lib/libsomxaace.so
 lib/libExynosOMX_Core.so
 lib/libExynosOMX_Resourcemanager.so
 
