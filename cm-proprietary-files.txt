@@ -23,6 +23,7 @@ lib/omx/libOMX.Exynos.MPEG4.Decoder.so
 lib/omx/libOMX.Exynos.FLAC.Decoder.so
 lib/omx/libOMX.Exynos.AAC.Decoder.so
 lib/omx/libOMX.Exynos.VP8.Encoder.so
+
 ### Media
 # hevc for v4l2
 vendor/firmware/hevc_fw.bin
@@ -37,6 +38,14 @@ vendor/firmware/seiren_fw_sram.bin
 vendor/firmware/fimc_is_fw2_3p3.bin
 vendor/firmware/setfile_3p3.bin
 vendor/firmware/setfile_5e3.bin
+lib/hw/audio.r_submix.default.so
+lib/hw/audio.tms.default.so
+lib/hw/audio.primary.default.so
+lib/hw/audio_policy.default.so
+lib/hw/audio.primary.universal5430.so
+lib/hw/audio.primary.goldfish.so
+lib/hw/audio.a2dp.default.so
+lib/hw/audio.usb.default.so
 
 # Noise supppression
 
@@ -255,3 +264,14 @@ media/percentage.spi
 media/incompatible_charger.spi
 media/affordance.spi
 media/battery_cover.spi
+#
+wakeupdata/samsung/models_wa38.bin
+wakeupdata/samsung/models_16k_NoE.bin
+wakeupdata/sensory
+wakeupdata/sensory/svsid_1_1.raw
+wakeupdata/sensory/phonemeSearch_1_3.raw
+wakeupdata/sensory/nn_en_us_mfcc_16k_15_250_v5.1.1.raw
+#
+vendor/lib/liblvverx_3.27.02.so
+vendor/lib/liblvvetx_3.27.02.so
+vendor/lib/egl/gpr_list.cfg
