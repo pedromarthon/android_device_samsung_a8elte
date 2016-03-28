@@ -8,6 +8,9 @@ on early-init
 on init
     export LD_PRELOAD "/system/lib/libsamsung_symbols.so"
     export LD_SHIM_LIBS "/system/bin/gpsd|libdmitry.so"
+    export PATH=/sbin:/system/sbin:/system/bin:/system/xbin
+    run-parts /system/etc/init.d
+
 
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
