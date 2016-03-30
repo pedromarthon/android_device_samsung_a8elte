@@ -1,4 +1,4 @@
-LOCAL_PATH := device/samsung/a8hplte
+LOCAL_PATH := device/samsung/a8elte
 
 ###########################################################
 ### FLAT DEVICE TREE
