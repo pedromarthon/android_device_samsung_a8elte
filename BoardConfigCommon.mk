@@ -41,7 +41,7 @@ TARGET_POWERHAL_VARIANT := samsung
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/a8hplte
+TARGET_KERNEL_SOURCE := kernel/samsung/a8elte
 
 # Use these flags if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
