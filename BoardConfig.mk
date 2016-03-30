@@ -1,14 +1,14 @@
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/a8hplte/dtb.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/a8elte/dtb.img
 
 # Kernel
-TARGET_KERNEL_CONFIG := a8hplte_00_defconfig
+TARGET_KERNEL_CONFIG := a8mea_03_defconfig
 
 # RIL
 BOARD_MODEM_TYPE := m7450
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := a8hplte,A800I,SM-A800I
+TARGET_OTA_ASSERT_DEVICE := a8lte,A800F,SM-A800S
 
 # Inherit common board flags
-include device/samsung/a8hplte/BoardConfigCommon.mk
+include device/samsung/a8elte/BoardConfigCommon.mk
