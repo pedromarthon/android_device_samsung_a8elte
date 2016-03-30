@@ -1,3 +1,7 @@
+<a target="_blank" href="http://www.copyrighted.com/copyrights/view/0dl4-b1qo-4lxw-lsut"><img border="0" alt="Copyrighted.com Registered &amp; Protected 
+0DL4-B1QO-4LXW-LSUT" title="Copyrighted.com Registered &amp; Protected 
+0DL4-B1QO-4LXW-LSUT" width="150" height="40" src="http://static.copyrighted.com/images/seal.gif" /></a>
+
 Device configuration for the Samsung Galaxy A8
 
 Copyright (C) 2014-2015 The CyanogenMod Project
@@ -32,7 +36,7 @@ Copyright (C) 2014-2015 Andreas Schneider <asn@cryptomilk.org>
 
 
   - Create .repo/local_manifests/roomservice.xml with the following content:
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
@@ -43,6 +47,7 @@ Copyright (C) 2014-2015 Andreas Schneider <asn@cryptomilk.org>
 <project name="Grace5921/external_stlport.git" path="external/stlport" remote="github" />
 <project name="Grace5921/android_vendor_samsung_a8elte" path="vendorsamsung/a8elte" remote="github" revision="master" />
 </manifest>
+```xml
 
   $ repo sync
 
