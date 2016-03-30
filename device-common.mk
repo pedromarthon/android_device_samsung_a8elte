@@ -7,12 +7,12 @@ LOCAL_PATH := device/samsung/a8hplte
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    fstab.universal5433 \
+    fstab.universal5430 \
     init.samsung.rc \
-    init.universal5433.rc \
-    init.universal5433.usb.rc \
-    init.universal5433.wifi.rc \
-    ueventd.universal5433.rc
+    init.universal5430.rc \
+    init.universal5430.usb.rc \
+    init.universal5430.wifi.rc \
+    ueventd.universal5430.rc
 
 ###########################################################
 ### PERMISSONS
@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
-    audio.primary.universal5433
+    audio.primary.universal5430
 
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
@@ -150,14 +150,14 @@ PRODUCT_COPY_FILES += \
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    power.universal5433
+    power.universal5430
 
 ###########################################################
 ### LIGHTS
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    lights.universal5433
+    lights.universal5430
 
 ###########################################################
 ### GPS
@@ -175,7 +175,7 @@ PRODUCT_PACKAGES += \
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    camera.universal5433
+    camera.universal5430
 
 PRODUCT_PACKAGES += \
     Snap
@@ -261,7 +261,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
-$(call inherit-product, hardware/samsung_slsi-cm/exynos5433/exynos5433.mk)
+$(call inherit-product, hardware/samsung_slsi-cm/exynos5430/exynos5430.mk)
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/samsung/a8hplte/a8hplte-vendor.mk)

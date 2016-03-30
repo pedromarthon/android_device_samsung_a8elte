@@ -1,5 +1,5 @@
-import init.universal5433.usb.rc
-import init.universal5433.wifi.rc
+import init.universal5430.usb.rc
+import init.universal5430.wifi.rc
 import init.samsung.rc
 import init.modem.rc
 
@@ -350,7 +350,7 @@ on charger
     setprop sys.usb.config charging
 
 on fs
-    mount_all /fstab.universal5433
+    mount_all /fstab.universal5430
 
     # For Absolute Persistence Partition
     mkdir /persdata 0755 system system

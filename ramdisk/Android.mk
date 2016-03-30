@@ -13,10 +13,10 @@ include $(BUILD_PREBUILT)
 endif
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= fstab.universal5433
+LOCAL_MODULE		:= fstab.universal5430
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES		:= fstab.universal5433
+LOCAL_SRC_FILES		:= fstab.universal5430
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
@@ -29,33 +29,33 @@ LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.universal5433.usb.rc
+LOCAL_MODULE		:= init.universal5430.usb.rc
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES		:= init.universal5433.usb.rc
+LOCAL_SRC_FILES		:= init.universal5430.usb.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.universal5433.wifi.rc
+LOCAL_MODULE		:= init.universal5430.wifi.rc
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES		:= init.universal5433.wifi.rc
+LOCAL_SRC_FILES		:= init.universal5430.wifi.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.universal5433.rc
+LOCAL_MODULE		:= init.universal5430.rc
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES		:= init.universal5433.rc
+LOCAL_SRC_FILES		:= init.universal5430.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= ueventd.universal5433.rc
+LOCAL_MODULE		:= ueventd.universal5430.rc
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES		:= ueventd.universal5433.rc
+LOCAL_SRC_FILES		:= ueventd.universal5430.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
