@@ -1,0 +1,22 @@
+Device configuration for the Samsung Galaxy A8 (A800I variant)
+
+Copyright (C) 2016 Sumit Rajdev <androidlover5842@gmail.com>
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+------------------------------------------------------------------
+
+a8elte.xml:-
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
+<project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
+<project name="Grace5921/samsung_slsi-cm-exynos5433" path="hardware/samsung_slsi-cm/" remote="github" revesion="cm-13.0" />
+<project name="Grace5921/android_device_a8hplte" path="device/samsung/a8hplte" remote="github" revesion="cm-13.0" />
+<project name="Grace5921/external_stlport" path="external/stlport" remote="github" revesion="cm-13.0" />
+<project name="Grace5921/android_vendor_samsung_a8hplte" path="vendor/samsung/a8hplte" remote="github" revesion="cm-13.0" />
+</manifest>
