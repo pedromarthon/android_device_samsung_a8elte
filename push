@@ -13,5 +13,8 @@ echo "enter some detail about changes(Optional)"
 detail=""
 read detail
 git commit -m "$message" -m "$detail"
+echo "#############"
+echo "Pushing changes"
+echo "#############"
 git push origin test
 echo "changes are published on github"
