@@ -1,4 +1,4 @@
-LOCAL_PATH := device/samsung/a8hplte
+LOCAL_PATH := device/samsung/a8elte
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -115,7 +115,7 @@ BOARD_USE_VP8ENC_SUPPORT := true
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Hardware
-BOARD_HARDWARE_CLASS += device/samsung/a8hplte/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/a8elte/cmhw
 
 # WIFI
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
