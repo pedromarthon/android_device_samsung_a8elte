@@ -1,7 +1,8 @@
 #!/bin/bash
-rm *~
-rm *.*~
-rm .*~
+find -P *.*~ -delete
+find -P *~ -delete
+find -P .*~ -delete
+
 git status
 git add .
 git status
