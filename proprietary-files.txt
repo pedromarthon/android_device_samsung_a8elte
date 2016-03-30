@@ -1,5 +1,5 @@
 ### Bluetooth
-vendor/firmware/bcm43455_V0073.0000.hcd
+vendor/firmware/bcm43455_V0056.0058.hcd
 
 ### Wifi
 etc/wifi/cred.conf
@@ -16,13 +16,13 @@ etc/wifi/olsrd.conf
 
 
 ### Camera
-lib/hw/camera.universal5433.so
+lib/hw/camera.universal5430.so
 lib/libexynoscamera.so
 lib/libhwjpeg.so
 
 # GPS
 bin/gpsd
-lib/hw/gps.default.so:lib/hw/gps.universal5433.so
+lib/hw/gps.default.so:lib/hw/gps.universal5430.so
 lib/libwrappergps.so
 
 ### HWC
@@ -33,7 +33,7 @@ vendor/lib/libRSDriverArm.so
 ### OMX
 lib/omx/libOMX.Exynos.AVC.Encoder.so
 #sensor
-lib/hw/sensors.universal5433.so
+lib/hw/sensors.universal5430.so
 
 ### Widevine
 lib/liboemcrypto.so
@@ -51,7 +51,6 @@ lib/libsec-ril.so
 app/mcRegistry/ffffffff000000000000000000000005.tlbin
 app/mcRegistry/ffffffff000000000000000000000017.tlbin
 app/mcRegistry/ffffffff00000000000000000000000b.tlbin
-app/mcRegistry/ffffffff000000000000000000000011.tlbin
 app/mcRegistry/ffffffffd00000000000000000000016.tlbin
 app/mcRegistry/ffffffff00000000000000000000000a.tlbin
 app/mcRegistry/02010000080300030000000000000000.tlbin
@@ -63,8 +62,6 @@ app/mcRegistry/ffffffff000000000000000000000013.tlbin
 app/mcRegistry/ffffffff000000000000000000000004.tlbin
 app/mcRegistry/ffffffffd00000000000000000000004.tlbin
 app/mcRegistry/07010000000000000000000000000000.tlbin
-app/mcRegistry/ffffffff000000000000000000000021.tlbin
-app/mcRegistry/ffffffff000000000000000000000018.tlbin
 app/mcRegistry/ffffffff000000000000000000000019.tlbin
 app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
 app/mcRegistry/ffffffff000000000000000000000016.tlbin
@@ -74,7 +71,7 @@ app/mcRegistry/ffffffff00000000000000000000000e.tlbin
 app/mcRegistry/fffffffff0000000000000000000001e.tlbin
 app/mcRegistry/ffffffff000000000000000000000012.tlbin
 app/mcRegistry/ffffffff00000000000000000000000f.tlbin
-app/FFFFFFFF000000000000000000000001.drbin
+
 
 
 #system/vendor/firmware
@@ -239,7 +236,6 @@ vendor/firmware/seiren_fw_sram.bin
 /vendor/media/LMspeed_508.emd
 
 #OFFLINE CHARGING
-media/shutdown.qmg
 media/battery_low.spi
 media/battery_temperature_error.spi
 media/lcd_density.txt
@@ -249,6 +245,5 @@ media/battery_temperature_limit.spi
 media/percentage.spi
 media/incompatible_charger.spi
 media/affordance.spi
-media/shutdown.qmg.cover
 media/battery_cover.spi
 
