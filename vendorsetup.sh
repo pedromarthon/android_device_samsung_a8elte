@@ -1,2 +1,2 @@
-add_lunch_combo cm_a8hplte-eng
-add_lunch_combo cm_a8hplte-userdebug
+add_lunch_combo cm_a8elte-eng
+add_lunch_combo cm_a8elte-userdebug
