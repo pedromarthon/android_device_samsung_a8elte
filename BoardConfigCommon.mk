@@ -8,7 +8,7 @@ USE_CLANG_PLATFORM_BUILD := true
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_SOC := universal5430
+TARGET_SOC := exynos5430
 TARGET_SLSI_VARIANT := cm
 
 # CPU
