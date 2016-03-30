@@ -1,0 +1,17 @@
+#!/bin/bash
+rm *~
+rm *.*~
+rm .*~
+git add .
+echo "########################"
+echo ""
+echo "enter commit message"
+echo ""
+message=""
+read message
+echo "enter some detail about changes(Optional)"
+detail=""
+read detail
+git commit -m "$message" -m "$detail"
+git push origin test
+echo "changes are published on github"
