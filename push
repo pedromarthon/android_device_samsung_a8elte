@@ -2,7 +2,9 @@
 rm *~
 rm *.*~
 rm .*~
+git status
 git add .
+git status
 echo "########################"
 echo ""
 echo "enter commit message"
