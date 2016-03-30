@@ -1,0 +1,32 @@
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/ttyS0
+
+#
+# system.prop for universal5430
+#
+
+# LCD Density
+ro.sf.lcd_density=480
+
+
+
+ro.arch=exynos5430
+ro.kernel.qemu.gles=1
+persist.demo.hdmirotationlock=false
+
+# DHA tuning
+#DHA Parameters
+ro.config.dha_empty_init=18
+ro.config.dha_empty_max=18
+ro.config.dha_cached_max=4
+ro.config.dha_cached_min=3
+
+#minfree180MB
+ro.config.dha_lmk_scale = 1.454
+
+# SAMP_SPCM
+sys.config.spcm_enable=true
+sys.config.spcm_db_enable=true
+sys.config.spcm_db_launcher=true
+sys.config.samp_oak_enable=false
+sys.config.samp_oakoom_enable=false
