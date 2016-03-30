@@ -1,6 +1,6 @@
-DEVICE_PACKAGE_OVERLAYS += device/samsung/a8hplte/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/a8elte/overlay
 
-LOCAL_PATH := device/samsung/a8hplte
+LOCAL_PATH := device/samsung/a8elte
 
 ###########################################################
 ### RAMDISK
@@ -264,4 +264,4 @@ $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5430/exynos5430.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/a8hplte/a8hplte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/a8elte/a8elte-vendor.mk)
