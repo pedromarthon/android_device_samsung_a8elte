@@ -18,5 +18,5 @@ a8elte.xml:-
 <project name="Grace5921/samsung_slsi-cm-exynos5430" path="hardware/samsung_slsi-cm/" remote="github" revesion="cm-13.0" />
 <project name="Grace5921/android_device_samsung_a8elte" path="device/samsung/a8elte" remote="github" revesion="cm-13.0" />
 <project name="Grace5921/external_stlport" path="external/stlport" remote="github" revesion="cm-13.0" />
-<project name="Grace5921/android_vendor_samsung_a8elte" path="vendor/samsung/a8elte" remote="github" revesion="cm-13.0" />
+<project name="Grace5921/android_vendor_samsung_a8elte" path="vendor/samsung/a8elte" remote="github" revesion="master" />
 </manifest>
