@@ -15,8 +15,9 @@ a8elte.xml:-
 <manifest>
 <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" />
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" />
-<project name="Grace5921/samsung_slsi-cm-exynos5430" path="hardware/samsung_slsi-cm/" remote="github" revesion="cm-13.0" />
-<project name="Grace5921/android_device_samsung_a8elte" path="device/samsung/a8elte" remote="github" revesion="cm-13.0" />
-<project name="Grace5921/external_stlport" path="external/stlport" remote="github" revesion="cm-13.0" />
-<project name="Grace5921/android_vendor_samsung_a8elte" path="vendor/samsung/a8elte" remote="github" revesion="master" />
+<project name="Grace5921/samsung_slsi-cm-exynos5430" path="hardware/samsung_slsi-cm/" remote="github" revision="cm-13.0" />
+<project name="Grace5921/android_device_samsung_a8elte" path="device/samsung/a8elte" remote="github" revision="test" />
+<project name="Grace5921/external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
+<project name="Grace5921/Kernel_samsung_a8elte" path="kernel/samsung/a8elte" remote="github" revision="cm-13.0" />
+<project name="Grace5921/android_vendor_samsung_a8elte" path="vendor/samsung/a8elte" remote="github" revision="master" />
 </manifest>
