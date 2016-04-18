@@ -48,24 +48,16 @@ PRODUCT_COPY_FILES += \
 ### GRAPHICS
 ###########################################################
 
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := 560dpi
-PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196609 \
-    ro.sf.lcd_density=560 \
-    ro.bq.gpu_to_cpu_unsupported=1
+	ro.opengles.version=196608
 
 PRODUCT_PACKAGES += \
-    gralloc.exynos5
-
-PRODUCT_PACKAGES += \
-    libion \
-    libfimg
-
-PRODUCT_PACKAGES += \
-    libstlport
+	libion_exynos \
+	gralloc.exynos5 \
+	hwcomposer.exynos5
 
 ###########################################################
 ### RADIO
@@ -89,32 +81,34 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ###########################################################
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+	$(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+	$(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	wifi.interface=wlan0
 
 PRODUCT_PACKAGES += \
-    macloader \
-    wifiloader \
-    hostapd \
-    libwpa_client \
-    wpa_supplicant
+	libnetcmdiface \
+	macloader \
+	wifiloader \
+	hostapd \
+	libwpa_client \
+	wpa_supplicant
 
 # hardware/broadcom/wlan/bcmdhd/config/Android.mk
 PRODUCT_PACKAGES += \
-    dhcpcd.conf
+	dhcpcd.conf
 
 # external/wpa_supplicant_8/wpa_supplicant/wpa_supplicant_conf.mk
 PRODUCT_PACKAGES += \
-    wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
-    Tag
+	wpa_supplicant.conf
 
 ###########################################################
 ### BLUETOOTH
 ###########################################################
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+	$(LOCAL_PATH)/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+	$(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 ###########################################################
 ### AUDIO
@@ -175,11 +169,14 @@ PRODUCT_PACKAGES += \
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    camera.universal5430
+	Snap
 
 PRODUCT_PACKAGES += \
-    Snap
+	libhwjpeg \
+	libsamsung_symbols \
+	libdmitry
 
+# This fixes switching between front/back camera sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 
@@ -188,30 +185,42 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ###########################################################
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/gpio_keys_8.kl:/system/usr/keylayout/gpio_keys_8.kl \
-    $(LOCAL_PATH)/configs/keylayout/sec_touchkey.kl:/system/usr/keylayout/sec_touchkey.kl
+	$(LOCAL_PATH)/configs/idc/Synaptics_HID_TouchPad.idc:/system/usr/idc/Synaptics_HID_TouchPad.idc \
+	$(LOCAL_PATH)/configs/keylayout/gpio_keys_8.kl:/system/usr/keylayout/gpio_keys_8.kl \
+	$(LOCAL_PATH)/configs/keylayout/sec_touchkey.kl:/system/usr/keylayout/sec_touchkey.kl
 
-###########################################################
-### STYLUS
-###########################################################
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/idc/ft5x06_ts.idc:/system/usr/idc/ft5x06_ts.idc \
-    $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:/system/usr/idc/sec_e-pen.idc
 
 ###########################################################
 ### CHARGER
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    charger_res_images
+	charger_res_images \
+	charger
+
+###########################################################
+### MTP
+###########################################################
+
+PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory
+
+###########################################################
+### MOBICORE
+###########################################################
+
+PRODUCT_PACKAGES += \
+	mcDriverDaemon \
+        stlport \
+	keystore.exynos5
 
 ###########################################################
 ### PACKAGES
 ###########################################################
 
 PRODUCT_PACKAGES += \
-    SamsungServiceMode
+	SamsungServiceMode \
+	Torch
 
 ###########################################################
 ### SYMBOLS FOR BLOBS
@@ -258,6 +267,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_small_cache_height=2048 \
     ro.hwui.text_large_cache_width=4096 \
     ro.hwui.text_large_cache_height=4096
+
+PRODUCT_NAME := full_a8elte
+PRODUCT_DEVICE := a8eltegpi
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
