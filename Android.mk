@@ -16,6 +16,13 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter a8elte, $(TARGET_DEVICE)),)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+ifneq ($(filter a8elte , $(TARGET_DEVICE)),)
+
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/net/wireless/bcmdhd4358)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/sensorhub/brcm/factory)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/media/platform/exynos/fimc-is/sensor)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/security/tima_uevent)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
+
 endif
