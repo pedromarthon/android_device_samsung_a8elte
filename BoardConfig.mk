@@ -8,7 +8,7 @@ TARGET_KERNEL_CONFIG := a8mea_03_defconfig
 BOARD_MODEM_TYPE := m7450
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := a8lte,A800F,SM-A800S
+TARGET_OTA_ASSERT_DEVICE := a8elte,A800F,SM-A800F
 
 # Inherit common board flags
 include device/samsung/a8elte/BoardConfigCommon.mk
