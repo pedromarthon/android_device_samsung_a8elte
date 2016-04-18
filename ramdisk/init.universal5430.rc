@@ -23,6 +23,13 @@ on init
 
     mkdir /tombstones
 
+# LOGCAT Service
+service persistentLogging /system/bin/logcat -r 1024 -n 9 -v threadTime -f /cache/logs/log
+    user system
+    group system log
+    disabled
+
+
 # Support Preload install apks
     mkdir /preload 0771 system system
 
@@ -36,6 +43,10 @@ on init
 on post-fs
     # Increase max readahead size to 256 KB
     write /sys/block/mmcblk0/queue/read_ahead_kb 256
+    
+    # Take Logcat to /cache/logs
+    mkdir /cache/logs 0775 system log
+    start persistentLogging
 
 on post-fs-data
     # Multimedia property for Smart View
