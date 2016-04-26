@@ -115,23 +115,6 @@ on post-fs-data
     chmod 0600 /dev/btlock
     chown bluetooth bluetooth /dev/btlock
 
-###############################################################################
-# System LSI
-# Comment : add permission to device driver
-
-# NFC : Permissions for NFC
-    chmod 0660 /dev/sec-nfc
-# NFC : change owner
-    chown nfc nfc /dev/sec-nfc
-# NFC : create data/nfc for nv storage
-    mkdir /data/nfc 0700 nfc nfc
-    mkdir /data/nfc/param 0700 nfc nfc
-
-# Set up nfc test option
-    setprop snfc.test.fwdownload 2
-    setprop snfc.test.power      sec
-    setprop snfc.test.tag        sec
-###############################################################################
 
     # PMS DVFS
     chown radio system /sys/power/cpufreq_table
