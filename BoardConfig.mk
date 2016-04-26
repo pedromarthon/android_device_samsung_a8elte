@@ -204,7 +204,7 @@ BOARD_SEPOLICY_UNION := \
 ###########################################################
 
 BOARD_HAS_DOWNLOAD_MODE := true
-
+TARGET_RECOVERY_FSTAB := device/samsung/a8elte/ramdisk/fstab.universal5430
 ###########################################################
 ### TWRP RECOVERY
 ###########################################################
