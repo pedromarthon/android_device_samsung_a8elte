@@ -6,7 +6,7 @@ ro.product.brand=samsung
 ro.product.name=a8eltexx
 ro.product.device=a8elte
 
-ro.sf.lcd_density=320
+ro.sf.lcd_density=480
 
 #
 # RIL
