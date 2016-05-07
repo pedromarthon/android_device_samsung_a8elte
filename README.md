@@ -30,7 +30,7 @@
 <!-- kernel -->
 <project name="Grace5921/Kernel_samsung_a8elte" path="kernel/samsung/a8elte" remote="github" revision="cm-13.0" />
 <!-- device tree -->
-<project name="Grace5921/android_device_samsung_a8elte" path="device/samsung/a8elte" remote="github" revision="cm-12.1" />
+<project name="PedroMarthon/android_device_samsung_a8elte" path="device/samsung/a8elte" remote="github" revision="rr-5.1.1" />
 <!--vendor-->
 <project name="Grace5921/android_vendor_samsung_a8elte" path="vendor/samsung/a8elte" remote="github" revision="master" />
 </manifest>
